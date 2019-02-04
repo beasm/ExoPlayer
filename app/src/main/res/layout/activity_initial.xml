@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".InitialActivity">
+
+    <ImageView
+        android:id="@+id/peli1"
+        style="@style/imagenes"
+        android:layout_marginLeft="5dp"
+        android:onClick="goExoplayerToyStory"
+        android:src="@drawable/toystory" />
+
+    <ImageView
+        android:id="@+id/peli2"
+        style="@style/imagenes"
+        android:layout_below="@id/peli1"
+        android:layout_marginLeft="5dp"
+        android:onClick="goExoplayerBig_buck_bunny"
+        android:src="@drawable/big_buck_bunny" />
+
+    <ImageView
+        android:id="@+id/peli3"
+        style="@style/imagenes"
+        android:layout_marginLeft="208dp"
+        android:onClick="goExoplayerMadagascar3"
+        android:src="@drawable/madagascar3" />
+
+    <ImageView
+        android:id="@+id/peli4"
+        style="@style/imagenes"
+        android:layout_below="@id/peli3"
+        android:layout_marginLeft="208dp"
+        android:onClick="goExoplayerElephants_dream"
+        android:src="@drawable/elephants_dream" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/peli4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@android:color/black"
+        android:background="@android:color/white">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/boton"
+            android:hint="Introduce URL .mp4 para ver"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+            <requestFocus />
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/peli4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/input"
+        android:background="@android:color/darker_gray"
+        android:onClick="goExoplayer"
+        android:text="Buscar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
