@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         player.prepare(archivoMultimedia);
         player.setPlayWhenReady(true);
 
-//        SeekBar seekBar = (SeekBar) mediaController.findViewById(getResources().getIdentifier(mediacontroller_progress,id,android));
-//        seekBar.setThumb(getResources().getDrawable(R.drawable.player_thumb));
     }
 
     @Override

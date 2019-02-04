@@ -18,15 +18,15 @@
         style="@style/imagenes"
         android:layout_below="@id/peli1"
         android:layout_marginLeft="5dp"
-        android:onClick="goExoplayerBig_buck_bunny"
-        android:src="@drawable/big_buck_bunny" />
+        android:onClick="goExoplayerMadagascar3"
+        android:src="@drawable/madagascar3" />
 
     <ImageView
         android:id="@+id/peli3"
         style="@style/imagenes"
         android:layout_marginLeft="208dp"
-        android:onClick="goExoplayerMadagascar3"
-        android:src="@drawable/madagascar3" />
+        android:onClick="goExoplayerBig_buck_bunny"
+        android:src="@drawable/big_buck_bunny" />
 
     <ImageView
         android:id="@+id/peli4"
@@ -38,20 +38,21 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input"
-        android:layout_width="278dp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_below="@id/peli4"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="5dp"
         android:textColorHint="@android:color/black"
-        android:background="@android:color/white">
+        android:background="@drawable/redondo">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/input_data"
+            android:paddingLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/boton"
-            android:hint="Introduce URL .mp4 para ver"
+            android:hint="Introduce la URL"
             android:textColor="@android:color/black"
             android:textSize="17sp">
 
@@ -62,16 +63,17 @@
     <Button
         android:id="@+id/boton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@id/peli4"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="16dp"
         android:layout_toRightOf="@+id/input"
-        android:background="@android:color/darker_gray"
+        android:background="@drawable/redondo"
         android:onClick="goExoplayer"
         android:text="Buscar"
-        android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        />
 
 </RelativeLayout>
